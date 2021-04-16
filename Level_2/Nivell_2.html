@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <title>Exercici_8</title>
+    <meta charset="UTF-8">
+
+    <body>
+        <h3>Funció Calculadora Nivell 2</h3>
+        <p>Aprofita la funció "calculadora" de l'exercici anterior per crear una calculadora completa amb opcions per sumar, restar, multiplicar i dividir.<br> Hauràs de controlar el Zero com a denominador d'una divisió. <br>
+        </p>
+
+        <input type="number" id="valor1" placeholder="Escriu Primer número"><br>
+        <br>
+        <input type="number" id="valor2" placeholder="Escriu Segon número"><br>
+        <br>
+
+    
+        <input type="button" id="suma" onclick="sumar()" value="+">
+        <input type="button" id="resta" onclick="restar()" value="-">
+        <input type="button" id="multiplica" onclick="multiplicar()" value="x">
+        <input type="button" id="divide" onclick="dividir()" value="/"><br><br>
+        <input type="text" id="result" placeholder="Resultat">
+        <br>
+    
+         
+        
+        <script>
+            function sumar() {
+                let primer_numero = parseInt(document.getElementById("valor1").value);
+                let segon_numero = parseInt(document.getElementById("valor2").value);
+                let resultado;
+                    resultado = primer_numero + segon_numero;
+                    document.getElementById("result").value= resultado;  
+            }
+
+            function restar() {
+                let primer_numero = parseInt(document.getElementById("valor1").value);
+                let segon_numero = parseInt(document.getElementById("valor2").value);
+                let resultado;
+                    resultado = primer_numero - segon_numero;
+                    document.getElementById("result").value= resultado;  
+            }
+
+            function multiplicar() {
+                let primer_numero = parseInt(document.getElementById("valor1").value);
+                let segon_numero = parseInt(document.getElementById("valor2").value);
+                let resultado;
+                    resultado = primer_numero * segon_numero;
+                    document.getElementById("result").value= resultado;  
+            }
+
+            
+            function dividir() {
+                let primer_numero = parseInt(document.getElementById("valor1").value);
+                let segon_numero = parseInt(document.getElementById("valor2").value);
+                let resultado;
+                if(segon_numero == 0){
+                    resultado = "Infinit";
+                }else{
+                    resultado = primer_numero / segon_numero;
+                }
+                document.getElementById("result").value= resultado;  
+            }
+
+        </script>
+
+
+    </body>
+</html>
