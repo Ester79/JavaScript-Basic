@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title>Exercici_8</title>
+    <meta charset="UTF-8">
+
+    <body>
+        <h3>Funció Calculadora</h3>
+        <p>Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: <b>Operador, Valor1 i Valor2.</b><br>
+            Estructura de la funció que faci sumes, restes i multiplicacions. <br>El resultat haurà de ser mostrat per pantalla.
+        </p>
+
+        <input type="number" id="valor1" placeholder="Primer número"><br>
+        <br>
+        <input type="number" id="valor2" placeholder="Segon número"><br>
+        <br>
+
+        <h4>Selecciona una operació:</h4>
+        <select id="operador">
+            <option value="+">Sumar</option>
+            <option value="-">Restar</option>
+            <option value="*">Multiplicar</option>
+        </select>
+        <input type="button" id="calc" onclick="calculadora()" value="Calcula">
+    
+        <p id="total"></p>
+        
+        <script>
+
+            function calculadora(){
+                let primer_numero = parseInt(document.getElementById("valor1").value);
+                let segon_numero = parseInt(document.getElementById("valor2").value);
+                let calc = document.getElementById("operador").value;
+                let resultado;
+                if (calc == '+'){
+                    resultado = primer_numero + segon_numero;
+                }else if (calc == "-"){
+                    resultado = primer_numero - segon_numero;
+                }else{
+                    resultado = primer_numero * segon_numero;
+                }
+                document.getElementById("total").innerHTML = "El resultat es: " + resultado;
+            }
+            
+        </script>
+
+
+    </body>
+</html>

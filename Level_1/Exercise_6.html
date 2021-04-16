@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Reemplaçar valors</title>
+  </head>
+
+  <body>
+    <h2>Reemplaçar Valors</h2>
+    <p>
+      Reemplaça la paraula <b>blau</b> per la paraula <b>verd</b> del següent
+      text <b>Tinc un cotxe de color blau.</b><br>Després intenta fer-ho
+      reemplaçant les <b>o</b> per les <b>u.</b>
+    </p><br>
+  
+    <h4>Resultat:</h4>
+    <script>
+      let frase_original = "Tinc un cotxe de color blau";
+      let primer_canvi = frase_original.replace("blau", "verd", "gi");
+      let segon_canvi = primer_canvi.replace(/o/g, "u");
+      //let segon_canvi = 
+      document.write("La frase original es: " + frase_original + ".<br>");
+      document.write("La frase amb el primer canvi es: " + primer_canvi + "<br>");
+      document.write("La frase amb el segon canvi es: " + segon_canvi);
+    </script>
+
+  </body>
+</html>
