@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <title>Calculadora</title>
+
+
+  <link rel="stylesheet" href="styles/bootstrap.css">
+  <link rel="stylesheet" href="styles/styleCalculadora.css"/>
+  
+
+  <body>
+
+    <div class="container-fluid caja">
+        <div class="container-fluid cajaB">
+           
+            <div class="row resultado">
+                <input name="display" type="text" class="col-sm-12 pantalla" id="display">
+            </div>
+            <div class="row btn-group teclado">
+                <div class="container teclas">
+                    <div class="row">
+                        <button name="button7" type="button" class="btn-lg btn-light tecla" id="b7" onclick="mostrar(7)">7</button>
+                        <button name="button8" type="button" class="btn-lg btn-light tecla" id="b8" onclick="mostrar(8)">8</button>
+                        <button name="button9" type="button" class="btn-lg btn-light tecla" id="b9" onclick="mostrar(9)">9</button>
+                        <button name="buttonDivide" type="button" class="btn-lg btn-warning tecla" id="divide" onclick="divide()">/</button>
+                    </div>
+                </div>
+               
+                <div class="container teclas">
+                    <div class="row">
+                        <button name="button4" type="button" class="btn-lg btn-light tecla" id="b4" onclick="mostrar(4)">4</button>
+                        <button name="button5" type="button" class="btn-lg btn-light tecla" id="b5" onclick="mostrar(5)">5</button>
+                        <button name="button6" type="button" class="btn-lg btn-light tecla" id="b6" onclick="mostrar(6)">6</button>
+                        <button name="buttonMultiplica" type="button" class="btn-lg btn-warning tecla" id="multiplica" onclick="multiplica()">x</button>
+                    </div>
+                </div>
+                <div class="container teclas">
+                    <div class="row">
+                        <button name="button1" type="button" class="btn-lg btn-light tecla" id="b1" onclick="mostrar(1)">1</button>
+                        <button name="button2" type="button" class="btn-lg btn-light tecla" id="b2" onclick="mostrar(2)">2</button>
+                        <button name="button3" type="button" class="btn-lg btn-light tecla" id="b3" onclick="mostrar(3)">3</button>
+                        <button name="buttonMenos" type="button" class="btn-lg btn-warning tecla" id="menos" onclick="resta()">-</button>
+                    </div>
+                </div>
+                <div class="container teclas">
+                    <div class="row">
+                        <button name="button0" type="button" class="btn-lg btn-light tecla" id="b0" onclick="mostrar(0)">0</button>
+                        <button name="buttonCE" type="button" class="btn-lg btn-danger tecla" id="ce" onclick="borrar()">CE</button>
+                        <button name="buttonIgual" type="button" class="btn-lg btn-success tecla" id="igual" onclick="resultado()">=</button>
+                        <button name="buttonSuma" type="button" class="btn-lg btn-warning tecla" id="suma" onclick="suma()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("display").value = 0; // Ejecuta un 0 en la calculadora al cargar la pagina
+    </script>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="js/codeCalculadora.js"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

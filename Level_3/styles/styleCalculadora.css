@@ -1,0 +1,121 @@
+body{
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.caja{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: silver;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: outset 15px;
+    border-radius: 5px;
+    border-top: outset 10px;
+    border-bottom: outset 10px;
+}
+
+.cajaB {
+    background-color: blue;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 9px;
+    border: outset 4px silver;
+    border-top: outset 10px silver;
+    width: 100%;  
+}
+
+
+.valor{
+    margin-inline: 3px;
+    margin-block: 3px;
+    border-radius: 5px;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+}
+
+.operador{
+    background-color: white;
+    margin-left: 10px;
+    margin-block: 3px;
+    border-radius: 5px;  
+    display: flex;
+    justify-content: center;
+}
+
+.resultado{
+    margin-top:5px;
+    background-color:black;
+    border-radius: 5px;
+    margin-bottom: 5px;;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    color: white;
+}
+
+.teclado {
+    width: auto;
+    background-color: silver;
+    border-radius: 5px;
+    border: inset 12px;
+}
+
+.teclas{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.tecla {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-inline: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: outset 5px lightseagreen;
+    background-color: blue;
+    color: white;
+    width: 70px;
+}
+
+.btn-danger{
+    border: outset 5px lightgrey;
+    background-color: black;
+    color: red;
+    font-weight: bold;
+}
+
+.pantalla{
+    background-color: black;
+    text-align: right;
+}
+
+#display{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
