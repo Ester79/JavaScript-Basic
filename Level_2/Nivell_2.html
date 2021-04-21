@@ -21,44 +21,48 @@
         <input type="text" id="result" placeholder="Resultat">
         <br>
     
-         
-        
         <script>
+
+            function leer(numero){
+                return parseInt(document.getElementById(numero).value);
+            }
+
+            function mostrar(valor){
+                return document.getElementById("result").value = valor;
+            }
+
             function sumar() {
-                let primer_numero = parseInt(document.getElementById("valor1").value);
-                let segon_numero = parseInt(document.getElementById("valor2").value);
-                let resultado;
-                    resultado = primer_numero + segon_numero;
-                    document.getElementById("result").value= resultado;  
+                let primer_numero = leer("valor1");
+                let segon_numero = leer("valor2");
+                let resultado = primer_numero + segon_numero;
+                mostrar(resultado);  
             }
 
             function restar() {
-                let primer_numero = parseInt(document.getElementById("valor1").value);
-                let segon_numero = parseInt(document.getElementById("valor2").value);
-                let resultado;
-                    resultado = primer_numero - segon_numero;
-                    document.getElementById("result").value= resultado;  
+                let primer_numero = leer("valor1");
+                let segon_numero = leer("valor2");
+                let resultado = primer_numero - segon_numero;
+                mostrar(resultado);  
             }
 
             function multiplicar() {
-                let primer_numero = parseInt(document.getElementById("valor1").value);
-                let segon_numero = parseInt(document.getElementById("valor2").value);
-                let resultado;
-                    resultado = primer_numero * segon_numero;
-                    document.getElementById("result").value= resultado;  
+                let primer_numero = leer("valor1");
+                let segon_numero = leer("valor2");
+                let resultado = primer_numero * segon_numero;
+                mostrar(resultado); 
             }
 
             
             function dividir() {
-                let primer_numero = parseInt(document.getElementById("valor1").value);
-                let segon_numero = parseInt(document.getElementById("valor2").value);
+                let primer_numero = leer("valor1");
+                let segon_numero = leer("valor2");
                 let resultado;
                 if(segon_numero == 0){
                     resultado = "Infinit";
                 }else{
                     resultado = primer_numero / segon_numero;
                 }
-                document.getElementById("result").value= resultado;  
+                mostrar(resultado); 
             }
 
         </script>
